@@ -27,5 +27,3 @@ last_three_letters = 'XYZ'
 # multi word variable name in came case
 lastThreeLetters = 'XYZ'
 
-
-## Strings
