@@ -55,6 +55,53 @@ print(len(vegetable))
 
 print(len('asparagus'))
 
+## String Methods
+
+# absolutely everything in python is an object
+# object also have functions, these are called as methods
+
+vegetable = 'Asparagus'
+print(vegetable.lower()) # -> asparagus
+
+print(vegetable.upper()) # -> ASPARAGUS
+
+## Concatenation
+concatenated_string = 'Python ' + 'is' + ' fun.'
+print(concatenated_string) # -> 'Python is fun.'
+
+# similarly
+first = 'Python'
+second = 'is'
+third = 'fun'
+sentence = first + ' ' + second + ' ' + third + '.'
+print(sentence) # -> 'Python is fun.'
+
+
+# Repeating strings
+# <string> * num_of_times
+print('-'*12) # -> ------------ # 12 -'s
+
+## str() function
+# str() will convert non-strings like numbers to strings
+version = 3
+print('Python is ' + str(version) + ' is fun.')
+
+
+## Formatting strings
+## generating strings using concatenating is tedious and error prone
+## So we can use format() method to create formatted strings
+
+print('Python {} fun.'.format('is')) # -> Python is fun.
+print('{} {} {}{}'.format('Python', 'is', 'fun', '.')) # same as above
+
+# using args indexes
+print('Python {0} {1} and {1} {0} awesome'.format('is', 'fun'))
+
+## formatting and justifying data using extra special characters
+print('{0:8} | {1:<8}'.format('Vegetable', 'Quantity'))
+
+print('{0:9} | {1:<8}'.format('Asparagus', 2.33333))
+
 
 
 
